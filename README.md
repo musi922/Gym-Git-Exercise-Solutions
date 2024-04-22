@@ -3,8 +3,8 @@
 ## Bundle 1
 
 ### Exercise 1
-#### Exercise 2
 
+```bash
 The Gym@DESKTOP-9UFVDG8 MINGW64 ~
 $ cd desktop
 
@@ -101,7 +101,10 @@ Your branch is up to date with 'origin/main'.
 The Gym@DESKTOP-9UFVDG8 MINGW64 ~/desktop/Git-Exercise (main)
 $
 
+```
+#### Exercise 2
 
+```bash
 The Gym@DESKTOP-9UFVDG8 MINGW64 ~/desktop/Git-Exercise (main)
 $ git status
 On branch main
@@ -227,4 +230,84 @@ $ git reset --hard HEAD
 HEAD is now at 8b1d525 added home page and about page
 
 The Gym@DESKTOP-9UFVDG8 MINGW64 ~/desktop/Git-Exercise (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)      
+        modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+The Gym@DESKTOP-9UFVDG8 MINGW64 ~/desktop/Git-Exercise (main)
+$ git add .
+
+The Gym@DESKTOP-9UFVDG8 MINGW64 ~/desktop/Git-Exercise (main)
+$ git commit -m "Add README.md file changes"
+[main d0fb1ea] Add README.md file changes
+ 1 file changed, 129 insertions(+)
+
+The Gym@DESKTOP-9UFVDG8 MINGW64 ~/desktop/Git-Exercise (main)
+$ git push -u origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 1.49 KiB | 1.49 MiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/musi922/Gym-Git-Exercise-Solutions.git
+   8b1d525..d0fb1ea  main -> main
+branch 'main' set up to track 'origin/main'.
+
+The Gym@DESKTOP-9UFVDG8 MINGW64 ~/desktop/Git-Exercise (main)
 $
+```
+
+## Bundle 2
+
+### Exercise 1
+
+```bash
+The Gym@DESKTOP-9UFVDG8 MINGW64 ~/desktop/Git-Exercise (main)
+$ git checkout -b ft/bundle-2 
+Switched to a new branch 'ft/bundle-2'
+
+The Gym@DESKTOP-9UFVDG8 MINGW64 ~/desktop/Git-Exercise (ft/bundle-2)
+$ git add service.html
+
+The Gym@DESKTOP-9UFVDG8 MINGW64 ~/desktop/Git-Exercise (ft/bundle-2)
+$ git commit -m "Add new page Service page"
+[ft/bundle-2 1be1688] Add new page Service page
+ 1 file changed, 19 insertions(+)
+ create mode 100644 service.html
+
+The Gym@DESKTOP-9UFVDG8 MINGW64 ~/desktop/Git-Exercise (ft/bundle-2)
+$ git push -u origin ft/bundle-2
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 490 bytes | 490.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'ft/bundle-2' on GitHub by visiting:       
+remote:      https://github.com/musi922/Gym-Git-Exercise-Solutions/pull/new/ft/bundle-2
+remote:
+To https://github.com/musi922/Gym-Git-Exercise-Solutions.git
+ * [new branch]      ft/bundle-2 -> ft/bundle-2
+branch 'ft/bundle-2' set up to track 'origin/ft/bundle-2'.
+
+The Gym@DESKTOP-9UFVDG8 MINGW64 ~/desktop/Git-Exercise (ft/bundle-2)
+$ git checkout main
+M       README.md
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+The Gym@DESKTOP-9UFVDG8 MINGW64 ~/desktop/Git-Exercise (main)
+$
+
+```
+
