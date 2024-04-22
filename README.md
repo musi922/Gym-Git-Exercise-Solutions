@@ -728,3 +728,105 @@ To https://github.com/musi922/Gym-Git-Exercise-Solutions.git
 The Gym@DESKTOP-9UFVDG8 MINGW64 ~/desktop/Git-Exercise (ft/revert-team-changes)
 $
 ```
+
+
+### Bundle 4
+
+### Exercise 1
+
+```bash
+The Gym@DESKTOP-9UFVDG8 MINGW64 ~/desktop/Git-Exercise (main)
+$ git checkout ft/faq-page
+Switched to branch 'ft/faq-page'
+Your branch is up to date with 'origin/ft/faq-page'.
+
+The Gym@DESKTOP-9UFVDG8 MINGW64 ~/desktop/Git-Exercise (ft/faq-page)
+$ git checkout -b ft/home-page-redesign
+Switched to a new branch 'ft/home-page-redesign'
+
+The Gym@DESKTOP-9UFVDG8 MINGW64 ~/desktop/Git-Exercise (ft/home-page-redesign)
+$ git checkout main
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+The Gym@DESKTOP-9UFVDG8 MINGW64 ~/desktop/Git-Exercise (main)
+
+$ git pull origin main
+remote: Enumerating objects: 6, done.
+remote: Counting objects: 100% (6/6), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 1.79 KiB | 107.00 KiB/s, done.
+From https://github.com/musi922/Gym-Git-Exercise-Solutions
+ * branch            main       -> FETCH_HEAD
+   b2a3fcc..4588c9f  main       -> origin/main
+Merge made by the 'ort' strategy.
+ team.html => faq.html | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+ rename team.html => faq.html (75%)
+
+The Gym@DESKTOP-9UFVDG8 MINGW64 ~/desktop/Git-Exercise (main)
+$ git add upfate.html
+fatal: pathspec 'upfate.html' did not match any files
+
+The Gym@DESKTOP-9UFVDG8 MINGW64 ~/desktop/Git-Exercise (main)
+$ git add update.html
+
+The Gym@DESKTOP-9UFVDG8 MINGW64 ~/desktop/Git-Exercise (main)
+$ git commit -m "Update main branch with new changes"
+[main 0a17f0b] Update main branch with new changes
+ 1 file changed, 11 insertions(+)
+ create mode 100644 update.html
+
+The Gym@DESKTOP-9UFVDG8 MINGW64 ~/desktop/Git-Exercise (main)
+$ git push origin main
+Enumerating objects: 12, done.
+Counting objects: 100% (11/11), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (8/8), done.
+Writing objects: 100% (8/8), 3.09 KiB | 1.03 MiB/s, done.
+Total 8 (delta 4), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (4/4), completed with 2 local objects.
+To https://github.com/musi922/Gym-Git-Exercise-Solutions.git
+   4588c9f..0a17f0b  main -> main
+
+The Gym@DESKTOP-9UFVDG8 MINGW64 ~/desktop/Git-Exercise (main)
+$ git checkout ft/home-page-redesign
+Switched to branch 'ft/home-page-redesign'
+
+The Gym@DESKTOP-9UFVDG8 MINGW64 ~/desktop/Git-Exercise (ft/home-page-redesign)
+$ git rebase main
+Successfully rebased and updated refs/heads/ft/home-page-redesign.
+
+The Gym@DESKTOP-9UFVDG8 MINGW64 ~/desktop/Git-Exercise (ft/home-page-redesign)
+$ git push origin ft/home-page-redesign
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: 
+remote: Create a pull request for 'ft/home-page-redesign' on GitHub by visiting:
+remote:      https://github.com/musi922/Gym-Git-Exercise-Solutions/pull/new/ft/home-page-redesign
+remote:
+To https://github.com/musi922/Gym-Git-Exercise-Solutions.git
+ * [new branch]      ft/home-page-redesign -> ft/home-page-redesign
+
+The Gym@DESKTOP-9UFVDG8 MINGW64 ~/desktop/Git-Exercise (ft/home-page-redesign)
+$ git add home.html
+
+The Gym@DESKTOP-9UFVDG8 MINGW64 ~/desktop/Git-Exercise (ft/home-page-redesign)
+$ git commit -m "Redesign the home page"
+[ft/home-page-redesign 3e0250d] Redesign the home page
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+The Gym@DESKTOP-9UFVDG8 MINGW64 ~/desktop/Git-Exercise (ft/home-page-redesign)
+$ git push origin ft/home-page-redesign
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 297 bytes | 297.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/musi922/Gym-Git-Exercise-Solutions.git
+   0a17f0b..3e0250d  ft/home-page-redesign -> ft/home-page-redesign
+
+```
