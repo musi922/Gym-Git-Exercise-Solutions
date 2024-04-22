@@ -307,7 +307,30 @@ Switched to branch 'main'
 Your branch is up to date with 'origin/main'.
 
 The Gym@DESKTOP-9UFVDG8 MINGW64 ~/desktop/Git-Exercise (main)
+$ git pull origin main
+remote: Enumerating objects: 1, done.
+remote: Counting objects: 100% (1/1), done.
+remote: Total 1 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (1/1), 911 bytes | 182.00 KiB/s, done.
+From https://github.com/musi922/Gym-Git-Exercise-Solutions
+ * branch            main       -> FETCH_HEAD
+   d0fb1ea..7378c99  main       -> origin/main
+Updating d0fb1ea..7378c99
+Fast-forward
+ service.html | 19 +++++++++++++++++++
+ 1 file changed, 19 insertions(+)
+ create mode 100644 service.html
+
+The Gym@DESKTOP-9UFVDG8 MINGW64 ~/desktop/Git-Exercise (main)
 $
+
+The Gym@DESKTOP-9UFVDG8 MINGW64 ~/desktop/Git-Exercise (main)
+$ git add .
+
+The Gym@DESKTOP-9UFVDG8 MINGW64 ~/desktop/Git-Exercise (main)
+$ git commit -m "Added Service Page"
+[main 7ac7669] Added Service Page
+ 1 file changed, 85 insertions(+), 2 deletions(-)
 
 ```
 
