@@ -881,3 +881,120 @@ To https://github.com/musi922/Gym-Git-Exercise-Solutions-copy.git
 The Gym@DESKTOP-9UFVDG8 MINGW64 ~/desktop/Git-Exercise (main)
 $
 ```
+
+### Exercise 2
+```bash
+
+The Gym@DESKTOP-9UFVDG8 MINGW64 ~/desktop/Git-Exercise (main)
+$ git checkout main
+Already on 'main'
+Your branch is up to date with 'origin/main'.
+
+The Gym@DESKTOP-9UFVDG8 MINGW64 ~/desktop/Git-Exercise (main)
+$ git checkout -b ft/footer
+Switched to a new branch 'ft/footer'
+
+The Gym@DESKTOP-9UFVDG8 MINGW64 ~/desktop/Git-Exercise (ft/footer)
+$ git add footer.html
+
+The Gym@DESKTOP-9UFVDG8 MINGW64 ~/desktop/Git-Exercise (ft/footer)
+$ fit commit -m "Adding footer page"
+bash: fit: command not found
+
+The Gym@DESKTOP-9UFVDG8 MINGW64 ~/desktop/Git-Exercise (ft/footer)
+$ git commit -m "Adding footer page"
+[ft/footer 09ce451] Adding footer page
+ 1 file changed, 11 insertions(+)
+ create mode 100644 footer.html
+
+The Gym@DESKTOP-9UFVDG8 MINGW64 ~/desktop/Git-Exercise (ft/footer)
+$ git push -u origin ft/footer
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 441 bytes | 441.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'ft/footer' on GitHub by visiting:
+remote:      https://github.com/musi922/Gym-Git-Exercise-Solutions/pull/new/ft/footer
+remote:
+To https://github.com/musi922/Gym-Git-Exercise-Solutions.git
+ * [new branch]      ft/footer -> ft/footer
+branch 'ft/footer' set up to track 'origin/ft/footer'.
+
+The Gym@DESKTOP-9UFVDG8 MINGW64 ~/desktop/Git-Exercise (ft/footer)
+$ git add blog.html
+
+The Gym@DESKTOP-9UFVDG8 MINGW64 ~/desktop/Git-Exercise (ft/footer)
+$ git commit -m "Adding blog page"
+[ft/footer a4bb934] Adding blog page
+ 1 file changed, 13 insertions(+)
+ create mode 100644 blog.html
+
+The Gym@DESKTOP-9UFVDG8 MINGW64 ~/desktop/Git-Exercise (ft/footer)
+$ git push -u origin ft/footer
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 445 bytes | 445.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/musi922/Gym-Git-Exercise-Solutions.git
+   09ce451..a4bb934  ft/footer -> ft/footer
+branch 'ft/footer' set up to track 'origin/ft/footer'.
+
+The Gym@DESKTOP-9UFVDG8 MINGW64 ~/desktop/Git-Exercise (ft/footer)
+$ git checkout main
+M       home.html
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+The Gym@DESKTOP-9UFVDG8 MINGW64 ~/desktop/Git-Exercise (main)
+$ it checkout -b ft/squashing
+bash: it: command not found
+
+The Gym@DESKTOP-9UFVDG8 MINGW64 ~/desktop/Git-Exercise (main)
+$ git checkout -b ft/squashing
+Switched to a new branch 'ft/squashing'
+
+The Gym@DESKTOP-9UFVDG8 MINGW64 ~/desktop/Git-Exercise (ft/squashing)
+$ git merge --squash ft/footer
+Updating bc644b4..a4bb934
+Fast-forward
+Squash commit -- not updating HEAD
+ blog.html   | 13 +++++++++++++
+ footer.html | 11 +++++++++++
+ 2 files changed, 24 insertions(+)
+ create mode 100644 blog.html
+ create mode 100644 footer.html
+
+The Gym@DESKTOP-9UFVDG8 MINGW64 ~/desktop/Git-Exercise (ft/squashing)
+$ git commit -m "footer changes squashing"
+[ft/squashing a9ffbc0] footer changes squashing
+ 2 files changed, 24 insertions(+)
+ create mode 100644 blog.html
+ create mode 100644 footer.html
+
+The Gym@DESKTOP-9UFVDG8 MINGW64 ~/desktop/Git-Exercise (ft/squashing)
+$ git push -u origin ft/squashing
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 547 bytes | 547.00 KiB/s, done.
+Total 4 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 1 local object.
+remote:
+remote: Create a pull request for 'ft/squashing' on GitHub by visiting:
+remote:      https://github.com/musi922/Gym-Git-Exercise-Solutions/pull/new/ft/squashing
+remote:
+To https://github.com/musi922/Gym-Git-Exercise-Solutions.git
+ * [new branch]      ft/squashing -> ft/squashing
+branch 'ft/squashing' set up to track 'origin/ft/squashing'.
+
+The Gym@DESKTOP-9UFVDG8 MINGW64 ~/desktop/Git-Exercise (ft/squashing)
+$
+```
