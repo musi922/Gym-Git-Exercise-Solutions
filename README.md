@@ -830,3 +830,54 @@ To https://github.com/musi922/Gym-Git-Exercise-Solutions.git
    0a17f0b..3e0250d  ft/home-page-redesign -> ft/home-page-redesign
 
 ```
+
+
+## Bundle 4
+
+### Exercise 1
+
+```bash
+
+The Gym@DESKTOP-9UFVDG8 MINGW64 ~/desktop/Git-Exercise (main)
+$ git checkout main
+Already on 'main'
+Your branch is up to date with 'origin/main'.
+
+The Gym@DESKTOP-9UFVDG8 MINGW64 ~/desktop/Git-Exercise (main)
+$ git remote add git-copy https://github.com/musi922/Gym-Git-Exercise-Solutions-copy.git
+
+The Gym@DESKTOP-9UFVDG8 MINGW64 ~/desktop/Git-Exercise (main)
+$ git add home.html
+
+The Gym@DESKTOP-9UFVDG8 MINGW64 ~/desktop/Git-Exercise (main)
+$ git commit -m "Added Changes On homepage"
+[main 7fed9d3] Added Changes On homepage
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+The Gym@DESKTOP-9UFVDG8 MINGW64 ~/desktop/Git-Exercise (main)
+$ git push origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.    
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 336 bytes | 336.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/musi922/Gym-Git-Exercise-Solutions.git
+   7f8a36a..7fed9d3  main -> main
+
+The Gym@DESKTOP-9UFVDG8 MINGW64 ~/desktop/Git-Exercise (main)
+$ git push git-copy main
+Enumerating objects: 70, done.
+Counting objects: 100% (70/70), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (67/67), done.
+Writing objects: 100% (70/70), 16.22 KiB | 415.00 KiB/s, done.
+Total 70 (delta 33), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (33/33), done.
+To https://github.com/musi922/Gym-Git-Exercise-Solutions-copy.git
+ * [new branch]      main -> main
+
+The Gym@DESKTOP-9UFVDG8 MINGW64 ~/desktop/Git-Exercise (main)
+$
+```
